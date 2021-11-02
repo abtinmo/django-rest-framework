@@ -455,3 +455,12 @@ Default: `None`
 [rfc4627]: https://www.ietf.org/rfc/rfc4627.txt
 [heroku-minified-json]: https://github.com/interagent/http-api-design#keep-json-minified-in-all-responses
 [strftime]: https://docs.python.org/3/library/time.html#time.strftime
+
+
+## Validators
+
+#### DEFAULT_UNIQUE_TOGETHER_VALIDATOR_CLASS
+
+The default class to use for validating `unique_together` constraints in `ModelSerializer`.
+
+Default: `rest_framework.validators.UniqueTogetherValidator`
