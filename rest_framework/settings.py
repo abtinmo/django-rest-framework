@@ -126,7 +126,7 @@ DEFAULTS = {
     },
 
     # Validators
-    'DEFAULT_UNIQUE_TOGETHER_VALIDATOR_CLASS': 'rest_framework.validators.UniqueTogetherValidator',
+    'DEFAULT_UNIQUE_TOGETHER_VALIDATOR_CLASS': 'rest_framework.validators.UniqueTogetherValidator'
 }
 
 
@@ -149,7 +149,7 @@ IMPORT_STRINGS = [
     'UNAUTHENTICATED_TOKEN',
     'VIEW_NAME_FUNCTION',
     'VIEW_DESCRIPTION_FUNCTION',
-    'DEFAULT_UNIQUE_TOGETHER_VALIDATOR_CLASS',
+    'DEFAULT_UNIQUE_TOGETHER_VALIDATOR_CLASS'
 ]
 
 
