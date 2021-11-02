@@ -38,8 +38,7 @@ from rest_framework.utils.serializer_helpers import (
     ReturnList
 )
 from rest_framework.validators import (
-    UniqueForDateValidator, UniqueForMonthValidator, UniqueForYearValidator,
-    UniqueTogetherValidator
+    UniqueForDateValidator, UniqueForMonthValidator, UniqueForYearValidator
 )
 
 # Note: We do the following so that users of the framework can use this style:
@@ -1579,7 +1578,7 @@ class ModelSerializer(Serializer):
                     )
 
                 field_names = tuple(source_map[f][0] for f in unique_together)
-                validator = UniqueTogetherValidator(
+                validator = api_settings.DEFAULT_UNIQUE_TOGETHER_VALIDATOR_CLASS(
                     queryset=parent_class._default_manager,
                     fields=field_names
                 )
